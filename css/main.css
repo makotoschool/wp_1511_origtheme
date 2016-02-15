@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body {
+    font-family: "MS PGothic","Osaka",Arial,sans-serif;
+    font-size: 75%;
+    background-image:url(../img/wall.jpg);
+    background-attachment:fixed;
+}
+
+/* -------Common class-----*/
+
+/*箱の幅にpaddingとborderの幅の分を含める*/
+div,header,nav,ul,li,a,main,section,article,aside,h1,h2,h3,h4,h5,h6,p {
+box-sizing:border-box;
+}
+
+/* clearfix */
+.clearfix:after{
+display:block;	
+content:'';
+width:100%;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+/* clear */
+.clear {
+clear:both;
+}
+
+/*存在させるけど非表示*/
+.invisible {
+visibility: hidden;
+}
+
+.sub_title{
+text-align:center;
+padding-top:40px;
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.content {
+padding:40px;
+font-size:1rem;
+}
+
+.image_left{
+float:left;
+margin:20px 20px 20px 0;
+}
+
+.image_right{
+float:right;
+margin:20px 0 20px 20px;
+}
+
+.inset {
+-webkit-box-shadow: inset 1px 1px 14px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    inset 1px 1px 14px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         inset 1px 1px 14px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+/* ↑-------Common class-----　*/
+
+
+/* Layout */
+/*
+大外のcontainerの中の箱の横幅は全部相対値（%）にしていますので
+大外の横幅変えるだけで全体の横幅が調節できます
+*/
+.container {
+width:1024px;
+margin:40px auto 0 auto;
+
+}
+
+.main_header {
+height:500px;
+/*↓ダミーの背景画像です。好きな画像に差し替えて下さいね*/
+background-image:url(../img/mac.jpg);
+background-position:top center;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+}
+
+footer {
+margin-bottom: 50px;
+}
+
+.footer_widget{
+width:calc(100% / 3 - 40px);
+min-height:300px;
+float:left;
+margin:20px;
+background-color:#fff;
+
+}
+
+
+
+/*上部ロゴ*/
+.logo {
+width:300px;
+height: 60px;
+line-height:60px;
+font-size:2.8rem;
+font-family:'impact','cursive','sans-serif';
+color:#fff;
+background-color: #34BCD4;
+text-align: center;
+float: left;
+margin-bottom: 10px;
+	
+}
+
+.logo:first-letter{
+color:#F94F2C;
+}
+
+.logo:hover {
+background-color: #FF795B;
+transition:0.5s linear;	
+}
+
+/* ユーティリティナビゲーションメニュー*/
+.utility_nav  {
+display: inline-block;
+float:right;
+margin-top: 30px;	
+}
+.utility_nav li {
+display: inline-block;
+margin-left: 10px;	
+}
+.utility_nav a{
+text-decoration: none;
+color:#000;	
+}
+
+.utility_nav a:hover {
+padding:5px 0;
+border-top:2px solid #000;
+border-bottom:2px solid #000;  
+}
+
+
+/* メインナビゲーションメニュー*/
+.main_nav {
+height:40px;
+}
+
+.main_nav a {
+display:block;
+list-style-type:none;
+float:left;
+line-height:40px;
+text-align:center;
+text-decoration:none;
+background-color:#313738;
+color:#fff;
+width:calc(100% / 6);
+width:-moz-calc(100% / 6);
+width:-webkit-calc(100% / 6);
+}
+
+.main_nav li:not(:last-child) a {
+border-right:1px dotted #fff;
+}
+
+.main_nav a:hover {
+background-color: #FF795B;
+color:#fff;	
+transition:0.5s linear;
+}
+
+/* メインコンテンツエリア　*/
+.gloval_main .contents {
+width:70%;
+float:left;
+}
+
+.gloval_main .contents .content_sentence {
+width:calc(100% - 20px);
+width:-moz-calc(100% - 20px);
+width:-webkit-calc(100% - 20px);
+margin:10px;	
+min-height:770px;
+background-color: #fff;
+}
+
+.content_fullwidth {
+margin:20px 0;
+padding:10px;
+}
+
+.content_fullwidth ul li {
+width:calc((100% - 80px) / 4);
+width:-moz-calc((100% - 80px) / 4);
+width:-webkit-calc((100% - 80px) / 4);
+min-height:300px;
+background-color:#fff;
+margin:10px;
+float:left;
+}
+
+.content_sentence_fullwidth {
+min-height:400px;
+background-color: #fff;
+margin:10px;
+}
+
+/* サイドメニューエリア　*/
+.gloval_main .sidemenu {
+width:30%;
+float:left;
+
+}
+
+.gloval_main .sidemenu .widget {
+width:calc(100% - 20px);
+width:-moz-calc(100% - 20px);
+width:-webkit-calc(100% - 20px);
+min-height:250px;
+background-color:#fff;
+margin:10px;
+
+}
+
+
+
+
+
