@@ -3,8 +3,11 @@
 body {
     font-family: "MS PGothic","Osaka",Arial,sans-serif;
     font-size: 75%;
-    background-image:url(../img/wall.jpg);
-    background-attachment:fixed;
+    background-image:url(../img/manleft.png),url(../img/manright.png),url(../img/wall.jpg);
+ 	background-repeat:no-repeat,no-repeat,repeat;
+ 	background-position:-3% 80%,109% 80%,0 0;
+ 	background-size:18%,22%,20%;
+    background-attachment:fixed,fixed,fixed;
 }
 
 /* -------Common class-----*/
