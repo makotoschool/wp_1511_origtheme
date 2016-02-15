@@ -43,4 +43,3 @@ It is a long established fact that a reader will be distracted by the readable c
 		</section>
 	</main>
 <?php get_footer(); ?>	
-	
