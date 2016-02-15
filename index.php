@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 <title>TOP|MakotoDesign</title>
+<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
 
 <?php wp_head( );?>
 </head>
