@@ -245,7 +245,7 @@ margin:10px;
 
 /*-----------extra-------------*/
 /*受賞しましたよマーク*/
-.container:after{
+.home .container:after{
 content:'';
 display:block;
 position:fixed;
@@ -285,8 +285,9 @@ text-decoration:none;
 /*-------固定ページサイドバーなしテンプレート---------*/
 .page-id-76 .gloval_main .contents,
 .page-id-66 .gloval_main .contents,
-.page-id-70 .gloval_main .contents {
-
+.page-id-70 .gloval_main .contents
+ {
 width:100%;
-}
 
+}
+ 
