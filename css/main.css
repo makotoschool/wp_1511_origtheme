@@ -4,11 +4,14 @@ body {
     font-family: "MS PGothic","Osaka",Arial,sans-serif;
     font-size: 75%;
     background-image:url(../img/manleft.png),url(../img/manright.png),url(../img/wall.jpg);
+ 	/*maltipule background 重なり順は左が一番上*/
  	background-repeat:no-repeat,no-repeat,repeat;
  	background-position:-3% 80%,109% 80%,0 0;
  	background-size:18%,22%,20%;
     background-attachment:fixed,fixed,fixed;
 }
+
+
 
 /* -------Common class-----*/
 
@@ -233,7 +236,21 @@ margin:10px;
 
 }
 
+/*-----------extra-------------*/
+/*受賞しましたよマーク*/
+.container:after{
+content:'';
+display:block;
+position:fixed;
+right:10px;
+top:100px;
+width:200px;
+height:200px;
+background-image:url(../img/awards.png);
+background-repeat:no-repeat;
+background-size:cover;
 
+}
 
 
 

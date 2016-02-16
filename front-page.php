@@ -3,6 +3,11 @@
 		<div class="gloval_main clearfix">
 			<section class="contents">
 				<article class="content_sentence inset">
+					<?php if(have_posts()):while(have_posts()):the_post();?>							
+						<h2 class="sub_title"><?php the_title(); ?></h2>
+						<div class="content"><?php the_content(); ?></div>													
+					<?php endwhile;endif;?>	
+					<!--
 					<h2 class="sub_title">ようこそMakotoDesignへ</h2>
 					<div class="content">
 						<p>
@@ -17,7 +22,7 @@ It is a long established fact that a reader will be distracted by the readable c
 						
 						</p>
 					</div>
-
+					-->
 				</article>		
 
 			</section>
