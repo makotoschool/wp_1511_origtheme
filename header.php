@@ -14,13 +14,13 @@
 				<?php bloginfo('name'); ?>
 			</h1>
 		</a>
-		<nav class="utility_nav">
-			<ul>
-			<li><a href="">NEWS</a></li>
-			<li><a href="">SITEMAP</a></li>
-			<li><a href="">PRIVACY</a></li>
-			</ul>
-		</nav>
+		<?php 
+		wp_nav_menu(array(
+				'theme_location'=>'utility',	
+				'container'=>'nav',
+				'container_class'=>'utility_nav'
+		));	
+		?>
 		<div class="main_header clear">
 			<h2>
 				<span class="invisible">これも検索エンジン対策の見出しです</span>
@@ -28,13 +28,11 @@
 
 		</div>
 	</header>
-	<nav class="main_nav clearfix">
-		<ul>
-		<li><a href="">Top</a></li>
-		<li><a href="">Web</a></li>
-		<li><a href="">Dtp</a></li>
-		<li><a href="">Blog</a></li>
-		<li><a href="">Access</a></li>
-		<li><a href="">Contact</a></li>
-		</ul>
-	</nav>
+	<?php 
+		wp_nav_menu(array(
+				'theme_location'=>'mainnavi',	
+				'container'=>'nav',
+				'container_class'=>'main_nav clearfix'
+		));	
+	?>
+	

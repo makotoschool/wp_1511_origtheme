@@ -84,6 +84,11 @@ margin:40px auto 0 auto;
 }
 
 .main_header {
+background:none;
+height:0;
+}
+
+.home .main_header {
 height:500px;
 /*↓ダミーの背景画像です。好きな画像に差し替えて下さいね*/
 background-image:url(../img/mac.jpg);
@@ -92,6 +97,8 @@ background-repeat:no-repeat;
 background-size:cover;
 background-attachment:fixed;
 }
+
+
 
 footer {
 margin-bottom: 50px;
@@ -194,7 +201,7 @@ width:calc(100% - 20px);
 width:-moz-calc(100% - 20px);
 width:-webkit-calc(100% - 20px);
 margin:10px;	
-min-height:770px;
+min-height:300px;
 background-color: #fff;
 }
 
@@ -243,7 +250,7 @@ content:'';
 display:block;
 position:fixed;
 right:10px;
-top:100px;
+top:200px;
 width:200px;
 height:200px;
 background-image:url(../img/awards.png);
@@ -252,5 +259,34 @@ background-size:cover;
 
 }
 
+/*------------single-----------------*/
+.post-categories {
+margin-left:5%;
+}
 
+.post-categories a {
+	color:#EA6E6E;
+	font-size:1.2rem;
+
+}
+
+.content_sentence .link {
+padding:0 0 40px 0;
+text-align:center;
+}
+
+.content_sentence .link a {
+color:#EA6E6E;
+font-size:1.5rem;
+text-decoration:none;
+}
+
+
+/*-------固定ページサイドバーなしテンプレート---------*/
+.page-id-76 .gloval_main .contents,
+.page-id-66 .gloval_main .contents,
+.page-id-70 .gloval_main .contents {
+
+width:100%;
+}
 
