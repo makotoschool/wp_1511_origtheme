@@ -50,7 +50,7 @@ function widget_add($title,$id){
 
 }
 
-add_theme_support('post-thumbnails');
+add_theme_support('');
 
 
 

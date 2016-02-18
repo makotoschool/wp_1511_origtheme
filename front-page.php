@@ -28,7 +28,10 @@
 		<section class="content_fullwidth">
 			<h2>固定記事</h2>
 			<article class="content_sentence_fullwidth">
-
+			<?php
+			$sub_post=get_post(88);?>
+			<h3><?php echo $sub_post->post_title ;?></h3>
+			<div class="content"><?php echo $sub_post->post_content ;?></div>		
 				
 			</article>			
 		</section>
