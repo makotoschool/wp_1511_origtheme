@@ -1,10 +1,5 @@
 	<footer class="clearfix">
-		<div class="footer_widget">
-		</div>
-		<div class="footer_widget">
-		</div>
-		<div class="footer_widget">
-		</div>
+		<?php dynamic_sidebar('footer');?>
 	
 	</footer>
 </div>
